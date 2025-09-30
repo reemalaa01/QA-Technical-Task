@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="2"
+            tests="16">
+
+  <testsuite name="Contact Us Page Tests - POM" id="sample.test"
+    errors="0" failures="2" hostname="" package="sample.test" skipped="0"
+    tests="16" time="49.93" timestamp="">
+  
+    <testcase name="Should verify all key form elements are visible" classname="Contact Us Page Tests - POM" time="1.612" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should display correct description when selecting subject heading" classname="Contact Us Page Tests - POM" time="1.732" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should not allow submission when all fields are empty" classname="Contact Us Page Tests - POM" time="1.435" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should show error when invalid email is entered" classname="Contact Us Page Tests - POM" time="1.747" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should show error when message field is empty with valid email" classname="Contact Us Page Tests - POM" time="1.951" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should show error when message contains only whitespace" classname="Contact Us Page Tests - POM" time="7.235" assertions="1">  <failure message="Timed out while waiting for element &lt;div.alert.alert-danger&gt; to be present for 5000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (5141ms)">    at Page.assertErrorMessage (D:\NightWatchJs\page-objects\contactUsPage.js:52:19)
+    at DescribeInstance.&lt;anonymous&gt; (D:\NightWatchJs\tests\sample.test.js:278:8)</failure>
+
+    
+    </testcase>
+  
+    <testcase name="Should show error when subject heading is not selected" classname="Contact Us Page Tests - POM" time="2.632" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should successfully submit when all fields are valid" classname="Contact Us Page Tests - POM" time="2.196" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should show error when email looks like valid but has extra characters" classname="Contact Us Page Tests - POM" time="6.343" assertions="1">  <failure message="Timed out while waiting for element &lt;div.alert.alert-danger&gt; to be present for 5000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (5348ms)">    at DescribeInstance.&lt;anonymous&gt; (D:\NightWatchJs\tests\sample.test.js:315:8)</failure>
+
+    
+    </testcase>
+  
+    <testcase name="Should accept max local-part length email (64 chars before @)" classname="Contact Us Page Tests - POM" time="1.670" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should accept email with alias (+ sign)" classname="Contact Us Page Tests - POM" time="1.540" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should accept email with uppercase letters" classname="Contact Us Page Tests - POM" time="1.681" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should accept large message scenario" classname="Contact Us Page Tests - POM" time="2.154" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should successfully submit when order reference is too large" classname="Contact Us Page Tests - POM" time="2.730" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should successfully submit with a valid file attached" classname="Contact Us Page Tests - POM" time="1.885" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should show error for unsupported file type" classname="Contact Us Page Tests - POM" time="1.700" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
