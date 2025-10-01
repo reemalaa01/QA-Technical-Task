@@ -1,63 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="3"
-            tests="12">
+            failures="0"
+            tests="13">
 
   <testsuite name="Search Module" id="dress.test"
-    errors="0" failures="3" hostname="" package="dress.test" skipped="0"
-    tests="12" time="84.57" timestamp="">
+    errors="0" failures="0" hostname="" package="dress.test" skipped="0"
+    tests="13" time="150.0" timestamp="">
   
-    <testcase name="Should search for &#34;dress&#34; and show it in results header" classname="Search Module" time="11.48" assertions="2">
+    <testcase name="Should search for &#34;dress&#34; and show it in results header" classname="Search Module" time="11.18" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Should search for &#34;dress&#34; and show it in results" classname="Search Module" time="3.151" assertions="8">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-      <failure message="Failed [ok]: (Product 6: &#34;Faded Short Sleeves T-shirt&#34; should include the word &#34;Dress&#34;) - expected &#34;true&#34; but got: &#34;false&#34; (1ms)">    at D:\NightWatchJs\tests\dress.test.js:34:22
-    at Array.forEach (&lt;anonymous&gt;)
-    at DescribeInstance.&lt;anonymous&gt; (D:\NightWatchJs\tests\dress.test.js:33:11)</failure>
-
-    
-    </testcase>
-  
-    <testcase name="Should sort products by lowest price first" classname="Search Module" time="5.498" assertions="3">
-
-    
-
-      <failure message="Failed [ok]: (Prices should be sorted ascending. Found 16.51 &gt; 16.4) - expected &#34;true&#34; but got: &#34;false&#34; (1ms)">    at Page.assertSortedAscending (D:\NightWatchJs\page-objects\searchPage.js:142:25)
-    at DescribeInstance.&lt;anonymous&gt; (D:\NightWatchJs\tests\dress.test.js:47:22)</failure>
-
-    
-    </testcase>
-  
-    <testcase name="Should sort products by highest price first" classname="Search Module" time="5.852" assertions="4">
-
-    
-
-    
-
-      <failure message="Failed [ok]: (Prices should be sorted descending. Found 28.98 &lt; 30.5) - expected &#34;true&#34; but got: &#34;false&#34; (2ms)">    at Page.assertSortedDescending (D:\NightWatchJs\page-objects\searchPage.js:152:25)
-    at DescribeInstance.&lt;anonymous&gt; (D:\NightWatchJs\tests\dress.test.js:56:22)</failure>
-
-    
-    </testcase>
-  
-    <testcase name="Should sort products alphabetically from A to Z" classname="Search Module" time="5.497" assertions="8">
+    <testcase name="Should sort products alphabetically from A to Z" classname="Search Module" time="5.716" assertions="8">
 
     
 
@@ -76,7 +33,7 @@
     
     </testcase>
   
-    <testcase name="Should sort products alphabetically from Z to A" classname="Search Module" time="6.609" assertions="8">
+    <testcase name="Should sort products alphabetically from Z to A" classname="Search Module" time="5.630" assertions="8">
 
     
 
@@ -95,7 +52,7 @@
     
     </testcase>
   
-    <testcase name="Should change product view from grid to list" classname="Search Module" time="4.376" assertions="7">
+    <testcase name="Should change product view from grid to list" classname="Search Module" time="42.10" assertions="7">
 
     
 
@@ -112,14 +69,14 @@
     
     </testcase>
   
-    <testcase name="Should sort products by availability (in stock first)" classname="Search Module" time="5.516" assertions="2">
+    <testcase name="Should sort products by availability (in stock first)" classname="Search Module" time="5.358" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Should sort products by reference (lowest first)" classname="Search Module" time="22.42" assertions="15">
+    <testcase name="Should sort products by reference (lowest first)" classname="Search Module" time="28.55" assertions="15">
 
     
 
@@ -152,7 +109,17 @@
     
     </testcase>
   
-    <testcase name="Should return the same results regardless of case (dress vs Dress vs DRESS)" classname="Search Module" time="8.856" assertions="10">
+    <testcase name="Should sort products by reference (highest first)" classname="Search Module" time="21.99" assertions="15">
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -175,7 +142,19 @@
     
     </testcase>
   
-    <testcase name="Should match product count text with actual number of products" classname="Search Module" time="2.249" assertions="4">
+    <testcase name="Should return the same results regardless of case (dress vs Dress vs DRESS)" classname="Search Module" time="9.493" assertions="10">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -186,7 +165,57 @@
     
     </testcase>
   
-    <testcase name="Should ensure each product has a price with $ and count matches" classname="Search Module" time="2.963" assertions="2">
+    <testcase name="Should match product count text with actual number of products" classname="Search Module" time="2.734" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should ensure each product has a price with $ and count matches" classname="Search Module" time="3.215" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should decrement compare counter when product is removed from compare" classname="Search Module" time="5.555" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should show error when adding more than 3 products to compare" classname="Search Module" time="6.079" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should not allow adding out-of-stock product to cart" classname="Search Module" time="2.247" assertions="5">
+
+    
+
+    
+
+    
 
     
 

@@ -1,43 +1,106 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="1"
+<testsuites errors="0"
             failures="0"
             tests="0">
 
-  <testsuite name="sample.test" id="sample.test"
-    errors="1" failures="0" hostname="" package="sample.test" skipped="1"
-    tests="0" time="0.001000" timestamp="">
+  <testsuite name="Contact Us Page Tests - POM" id="sample.test"
+    errors="0" failures="0" hostname="" package="sample.test" skipped="18"
+    tests="0" time="0" timestamp="">
   
 
-  
-    <system-err>
-       An error occurred while creating a new ChromeDriver session: [SessionNotCreatedError] session not created: This version of ChromeDriver only supports Chrome version 140
-Current browser version is 139.0.7258.155 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-  Verify if ChromeDriver is configured correctly; using:
-  {
-     start_process: true,
-     server_path: &#39;D:\\NightWatchJs\\node_modules\\chromedriver\\lib\\chromedriver\\chromedriver.exe&#39;,
-     port: undefined,
-     host: &#39;localhost&#39;,
-     ssl: false,
-     default_path_prefix: &#39;&#39;,
-     proxy: undefined,
-     cli_args: {}
-  }
-
- 
-  Set webdriver.log_path in your Nightwatch config to retrieve more logs from ChromeDriver.
-    </system-err>
   
 
     
-    <error message=""><![CDATA[
-      
-      ]]></error>  
 
   
     
     <testcase
-      name="Sample Test" classname="sample.test">
+      name="Should verify all key form elements are visible" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should display correct description when selecting subject heading" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should not allow submission when all fields are empty" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should show error when invalid email is entered" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should show error when message field is empty with valid email" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should show error when subject heading is not selected" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should show error when subject heading is not selected" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should successfully submit when all fields are valid" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should accept max local-part length email (64 chars before @)" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should accept email with alias (+ sign)" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should accept email with uppercase letters" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should accept large message scenario" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should successfully submit when order reference is too large" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should accept alphabetical order reference" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should accept order reference with special characters" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should successfully submit with a valid file attached" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should show error for unsupported file type" classname="Contact Us Page Tests - POM">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should succeed after replacing invalid file with valid file" classname="Contact Us Page Tests - POM">
       <skipped />
     </testcase>
     

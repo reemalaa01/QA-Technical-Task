@@ -1,3 +1,4 @@
+
 version: 2.1
 
 jobs:
@@ -29,6 +30,9 @@ jobs:
             cd UI-tests
             export CHROME_BIN=/usr/bin/google-chrome
             npx nightwatch --env chrome
+      - store_artifacts:
+          path: UI-tests/tests_output/nightwatch-html-report
+          destination: ui-report
 
   api-tests:
     docker:
@@ -45,6 +49,9 @@ jobs:
           command: |
             cd API-tests
             npm run test:ci
+      - store_artifacts:
+          path: API-tests/reports
+          destination: api-report
 
 workflows:
   version: 2
@@ -54,3 +61,60 @@ workflows:
       - api-tests:
           requires:
             - ui-tests
+
+# version: 2.1
+
+# jobs:
+#   ui-tests:
+#     docker:
+#       - image: cimg/node:22.4.0-browsers  # Node 22 with browsers
+#     environment:
+#       CHROME_BIN: /usr/bin/google-chrome
+#     steps:
+#       - checkout
+#       - run:
+#           name: Install UI dependencies
+#           command: |
+#             cd UI-tests
+#             npm ci
+#       - run:
+#           name: Install Google Chrome
+#           command: |
+#             sudo apt-get update
+#             sudo apt-get install -y wget gnupg2
+#             wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#             echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+#             sudo apt-get update
+#             sudo apt-get install -y google-chrome-stable
+#             $CHROME_BIN --version
+#       - run:
+#           name: Run Nightwatch tests
+#           command: |
+#             cd UI-tests
+#             export CHROME_BIN=/usr/bin/google-chrome
+#             npx nightwatch --env chrome
+
+#   api-tests:
+#     docker:
+#       - image: cimg/node:22.19
+#     steps:
+#       - checkout
+#       - run:
+#           name: Install API dependencies
+#           command: |
+#             cd API-tests
+#             npm ci
+#       - run:
+#           name: Run API tests
+#           command: |
+#             cd API-tests
+#             npm run test:ci
+
+# workflows:
+#   version: 2
+#   test-all:
+#     jobs:
+#       - ui-tests
+#       - api-tests:
+#           requires:
+#             - ui-tests

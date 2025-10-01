@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="18">
+
+  <testsuite name="Contact Us Page Tests - POM" id="contactus.test"
+    errors="0" failures="0" hostname="" package="contactus.test" skipped="0"
+    tests="18" time="38.77" timestamp="">
+  
+    <testcase name="Should verify all key form elements are visible" classname="Contact Us Page Tests - POM" time="7.132" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should display correct description when selecting subject heading" classname="Contact Us Page Tests - POM" time="1.064" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should not allow submission when all fields are empty" classname="Contact Us Page Tests - POM" time="1.485" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should show error when invalid email is entered" classname="Contact Us Page Tests - POM" time="3.097" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should show error when message field is empty with valid email" classname="Contact Us Page Tests - POM" time="1.998" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should show error when subject heading is not selected" classname="Contact Us Page Tests - POM" time="2.032" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should submit message successfully when mandatory fields added" classname="Contact Us Page Tests - POM" time="1.667" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should successfully submit when all fields are valid" classname="Contact Us Page Tests - POM" time="1.595" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should accept max local-part length email (64 chars before @)" classname="Contact Us Page Tests - POM" time="1.852" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should accept email with alias (+ sign)" classname="Contact Us Page Tests - POM" time="1.714" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should accept email with uppercase letters" classname="Contact Us Page Tests - POM" time="1.628" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should accept large message scenario" classname="Contact Us Page Tests - POM" time="1.714" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should successfully submit when order reference is too large" classname="Contact Us Page Tests - POM" time="2.671" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should accept alphabetical order reference" classname="Contact Us Page Tests - POM" time="1.613" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should accept order reference with special characters" classname="Contact Us Page Tests - POM" time="1.686" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should successfully submit with a valid file attached" classname="Contact Us Page Tests - POM" time="1.880" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should show error for unsupported file type" classname="Contact Us Page Tests - POM" time="1.702" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should succeed after replacing invalid file with valid file" classname="Contact Us Page Tests - POM" time="2.143" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

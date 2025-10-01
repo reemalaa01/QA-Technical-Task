@@ -1,31 +1,10 @@
 {
+    
+    
+"scripts":
+{
+"start:ci":"node app.ci.js",
+"test:ci":"start-server-and-test start:ci http://localhost:3000 test:mocha",
+"test:mocha":"mocha tests/**/*.js --reporter mochawesome --reporter-options reportDir=reports,reportFilename=report,overwrite=true,html=true,json=true,captureConsole=true"},
 
-"scripts": {
-  "start:ci": "node app.ci.js",
-  "test:ci": "start-server-and-test start:ci http://localhost:3000 test:mocha",
-  "test:mocha": "mocha tests/**/*.js"
-},
-
-
-  "devDependencies": {
-
-    "chai": "^4.5.0",
-
-    "mocha": "^11.7.2",
-
-    "mock-user-auth": "^1.0.15",
-
-    "start-server-and-test": "^2.1.2",
-
-    "supertest": "^7.1.4"
-
-  },
-
-  "dependencies": {
-
-    "regenerator-runtime": "^0.14.1"
-
-  }
-
-}
-
+"devDependencies":{"chai":"^4.5.0","mocha":"^11.7.2","mocha-multi-reporters":"^1.5.1","mochawesome":"^7.1.4","mock-user-auth":"^1.0.15","start-server-and-test":"^2.1.2","supertest":"^7.1.4"},"dependencies":{"regenerator-runtime":"^0.14.1"}}

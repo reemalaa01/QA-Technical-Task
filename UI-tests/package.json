@@ -12,6 +12,7 @@
     "nightwatch": "^3.12.2"
   },
   "devDependencies": {
+    "chromedriver": "^140.0.4",
     "nightwatch-html-reporter": "^2.0.6"
   }
 }

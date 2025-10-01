@@ -1,0 +1,47 @@
+version: 2.1
+
+jobs:
+  api-tests:
+    docker:
+      - image: cimg/node:22.19
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm ci
+      - run:
+          name: Run API tests
+          command: npm run test:ci
+      - store_artifacts:
+          path: reports
+          destination: mochawesome-reports
+
+workflows:
+  version: 2
+  test-workflow:
+    jobs:
+      - api-tests
+
+
+
+# version: 2.1
+# jobs:
+#   test:
+#     docker:
+#       - image: cimg/node:22.19
+#     steps:
+#       - checkout
+#       - run:
+#           name: Install dependencies
+#           command: npm ci
+#       - run:
+#           name: Run CI tests
+#           command: npm run test:ci
+#       - store_artifacts:
+#           path: reports
+#           destination: mochawesome-reports
+#     workflows:
+#   version: 2
+#   test:
+#     jobs:
+#       - test

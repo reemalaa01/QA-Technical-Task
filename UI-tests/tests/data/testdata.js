@@ -20,6 +20,8 @@ module.exports = {
   whitespaceMessage: '   ',
   longMessage: '33333333333'.repeat(500),
   validOrderRef: '12345',
+  alphabeticalOrderRef:'ABCDEF',
+  specialCharOrderRef:'@#$%123',
   longOrderRef: 'ORD'.repeat(500),
 
   // file names (example)
