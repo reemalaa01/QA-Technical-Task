@@ -72,6 +72,6 @@ Ensuring proper status codes and response messages.
 
 Both test suites generate HTML reports with clear pass/fail outcomes.
 
-The project is integrated with CircleCI (via .circleci/config.yml) to automatically run UI and API tests in parallel pipelines.
+The project is integrated with CircleCI (via .circleci/config.yml) to automatically run UI tests first then API tests 
 
 Test reports are stored as artifacts for review after each pipeline run.
