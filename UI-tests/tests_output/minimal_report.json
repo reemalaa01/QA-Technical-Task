@@ -1,1 +1,1 @@
-{"modules":{"contactus.test":{"modulePath":"D:\\NightWatchJs\\tests\\contactus.test.js","status":"pass"}}}
+{"modules":{"data\\testdata":{"modulePath":"D:\\NightWatchJs\\tests\\data\\testdata.js","status":"skip"},"contactus.test":{"modulePath":"D:\\NightWatchJs\\tests\\contactus.test.js","status":"pass"},"dress.test":{"modulePath":"D:\\NightWatchJs\\tests\\dress.test.js","status":"pass"}}}

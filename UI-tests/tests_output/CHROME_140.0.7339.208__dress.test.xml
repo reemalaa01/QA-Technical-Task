@@ -3,37 +3,18 @@
             failures="0"
             tests="13">
 
-  <testsuite name="Search Module" id="dress.test"
+  <testsuite name="Search Dress Module" id="dress.test"
     errors="0" failures="0" hostname="" package="dress.test" skipped="0"
-    tests="13" time="150.0" timestamp="">
+    tests="13" time="112.4" timestamp="">
   
-    <testcase name="Should search for &#34;dress&#34; and show it in results header" classname="Search Module" time="11.18" assertions="2">
+    <testcase name="Should search for &#34;dress&#34; and show it in results header" classname="Search Dress Module" time="18.07" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Should sort products alphabetically from A to Z" classname="Search Module" time="5.716" assertions="8">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Should sort products alphabetically from Z to A" classname="Search Module" time="5.630" assertions="8">
+    <testcase name="Should sort products alphabetically from A to Z" classname="Search Dress Module" time="7.991" assertions="8">
 
     
 
@@ -52,45 +33,7 @@
     
     </testcase>
   
-    <testcase name="Should change product view from grid to list" classname="Search Module" time="42.10" assertions="7">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Should sort products by availability (in stock first)" classname="Search Module" time="5.358" assertions="2">
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Should sort products by reference (lowest first)" classname="Search Module" time="28.55" assertions="15">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <testcase name="Should sort products alphabetically from Z to A" classname="Search Dress Module" time="5.370" assertions="8">
 
     
 
@@ -109,7 +52,31 @@
     
     </testcase>
   
-    <testcase name="Should sort products by reference (highest first)" classname="Search Module" time="21.99" assertions="15">
+    <testcase name="Should change product view from grid to list" classname="Search Dress Module" time="4.862" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should sort products by availability (in stock first)" classname="Search Dress Module" time="5.190" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should sort products by reference (lowest first)" classname="Search Dress Module" time="23.16" assertions="15">
 
     
 
@@ -142,7 +109,40 @@
     
     </testcase>
   
-    <testcase name="Should return the same results regardless of case (dress vs Dress vs DRESS)" classname="Search Module" time="9.493" assertions="10">
+    <testcase name="Should sort products by reference (highest first)" classname="Search Dress Module" time="18.98" assertions="15">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should return the same results regardless of case (dress vs Dress vs DRESS)" classname="Search Dress Module" time="10.02" assertions="10">
 
     
 
@@ -165,7 +165,7 @@
     
     </testcase>
   
-    <testcase name="Should match product count text with actual number of products" classname="Search Module" time="2.734" assertions="4">
+    <testcase name="Should match product count text with actual number of products" classname="Search Dress Module" time="2.994" assertions="4">
 
     
 
@@ -176,29 +176,18 @@
     
     </testcase>
   
-    <testcase name="Should ensure each product has a price with $ and count matches" classname="Search Module" time="3.215" assertions="2">
+    <testcase name="Should ensure each product has a price with $ and count matches" classname="Search Dress Module" time="2.378" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Should decrement compare counter when product is removed from compare" classname="Search Module" time="5.555" assertions="6">
+    <testcase name="Should decrement compare counter when product is removed from compare" classname="Search Dress Module" time="3.975" assertions="6">
 
     
 
     
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Should show error when adding more than 3 products to compare" classname="Search Module" time="6.079" assertions="4">
 
     
 
@@ -209,7 +198,18 @@
     
     </testcase>
   
-    <testcase name="Should not allow adding out-of-stock product to cart" classname="Search Module" time="2.247" assertions="5">
+    <testcase name="Should show error when adding more than 3 products to compare" classname="Search Dress Module" time="6.635" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should not allow adding out-of-stock product to cart" classname="Search Dress Module" time="2.693" assertions="5">
 
     
 
